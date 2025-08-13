@@ -16,3 +16,5 @@ websockets
 asyncio
 # json      -- doubt
 motor
+pydantic_settings
+passlib
