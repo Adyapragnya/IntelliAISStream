@@ -1,0 +1,109 @@
+/* mapStyles.css */
+.custom-icon img {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .leaflet-control-fullscreen {
+    background-color: white;
+    color: #333;
+  }
+  
+  .leaflet-control-fullscreen .leaflet-control-fullscreen-toggle {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .leaflet-reset-view {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #333;
+  }
+  
+  #popup-content {
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+  }
+  
+  .property-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .property-row label {
+    flex: 1;
+    margin-right: 5px;
+  }
+  
+  .property-id,
+  .property-date,
+  .property-name,
+  .select-type,
+  .category-type {
+    flex: 2;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  #alert-container {
+    margin-bottom: 10px;
+  }
+  
+  .alert-options {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+  }
+  
+  #alert-frequency {
+    margin-top: 10px;
+  }
+  
+  #button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button-group button {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box;
+  }
+  
+  #save-button {
+    background-color: #28a745;
+  }
+  
+  #delete-feature-button {
+    background-color: #dc3545;
+  }
+  
+  #save-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  #delete-feature-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+
+  

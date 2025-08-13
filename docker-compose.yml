@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  python-service:
+    build: ./python-service
+    container_name: maritime-backend
+    restart: always
+    ports:
+      - "8000:8000"
+    networks:
+      - maritime-network
+
+  frontend:
+    build: ./frontend
+    container_name: maritime-frontend
+    restart: always
+    ports:
+      - '5173:5173'
+    depends_on:
+      - python-service
+    networks:
+      - maritime-network
+
+  mongodb:
+    image: mongo
+    container_name: maritime-mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - maritime-data:/data/db
+    ports:
+      - '27017:27017'
+    networks:
+      - maritime-network
+
+networks:
+  maritime-network:
+    driver: bridge
+
+volumes:
+  maritime-data:
+

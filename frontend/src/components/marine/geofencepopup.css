@@ -1,0 +1,137 @@
+#popup-form {
+    width: 150px; /* Smaller width for a more compact popup */
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Reduced gap for a tighter layout */
+    font-family: Arial, sans-serif; /* Modern font */
+  }
+  
+  .property-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px; /* Reduced margin for a compact feel */
+  }
+  
+  .property-row label {
+    font-weight: 500; /* Slightly lighter font weight */
+    margin-bottom: 2px;
+    font-size: 0.7rem; /* Smaller label font size */
+  }
+  
+  .property-row input,
+  .property-row select,
+  .property-row textarea {
+    padding: 4px; /* Compact padding */
+    border: 1px solid #ddd; /* Light border color for a modern look */
+    border-radius: 2px; /* Slightly smaller border radius */
+    font-size: 0.7rem; /* Smaller font size */
+    outline: none;
+  }
+  
+  .property-row input:disabled {
+    background-color: #f7f7f7; /* Slightly lighter background for disabled inputs */
+  }
+  
+  .property-row textarea {
+    resize: none;
+    height: 30px; /* Reduced height for textarea */
+  }
+  
+  .buttons-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px; /* Add space above buttons */
+  }
+  
+  .submit-btn, .cancel-btn {
+    padding: 4px 6px; /* Reduced padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px; /* Smaller border radius */
+    cursor: pointer;
+    font-size: 0.7rem; /* Smaller button text */
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  .tooltip {
+    font-size: 0.6rem; /* Smaller tooltip text */
+    color: #888; /* Slightly muted color for tooltips */
+  }
+
+  
+  .property-row {
+    margin-bottom: 10px;
+  }
+  
+  .property-row label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .property-row input,
+  .property-row select,
+  .property-row textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .buttons-row {
+    margin-top: 10px;
+  }
+  
+  .submit-btn,
+  .cancel-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .vessel-select {
+    height: 100px;
+  }
+  
+
+
+  /* vessel in geofence */
+
+  .messages {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    z-index: 1000;
+  }
+  
+  .message {
+    margin-bottom: 5px;
+  }
+  

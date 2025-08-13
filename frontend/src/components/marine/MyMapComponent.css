@@ -1,0 +1,31 @@
+.checkbox-container {
+  display: flex;
+  justify-content: flex-end; /* Align checkbox to the right */
+  margin: 10px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+/* measuring tool styles */
+/* MyMapComponent.css */
+.measure-length-widget {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Ensure it's on top of other elements */
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

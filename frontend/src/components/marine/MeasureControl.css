@@ -1,0 +1,40 @@
+.leaflet-control-measure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;  /* Increased width for the button */
+    height: 30px; /* Increased height for the button */
+    background-color: #ffffff; /* Set a light background color */
+    border: 1px  rgb(28, 24, 24); /* Remove default border */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 9%; /* Make the button circular */
+    /* Add box shadow */
+    box-shadow: 5px rgba(0, 0, 0, 0.2); 
+    padding: 16px;
+
+}
+
+/* Change styles on hover */
+.leaflet-control-measure:hover {
+    background-color: rgb(251, 249, 249); /* Slightly increase background opacity on hover */
+    
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.leaflet-control-measure:active {
+    background-color: #fafafab3; /* Change background color on click */
+
+}
+
+
+/* MeasureControl.css */
+.crosshair {
+    cursor: crosshair !important; /* Ensure the cursor style is applied */
+}
+
+.leaflet-point-icon {
+    background-color: red; /* Change to your desired color */
+    border-radius: 50%; /* Make it round */
+    width: 4px; /* Increased size of the point */
+    height: 4px; /* Increased size of the point */
+}

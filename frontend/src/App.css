@@ -1,0 +1,12 @@
+/* Hide Save/Cancel by default */
+.aoi-hover-modal .swal2-actions {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show them on modal hover */
+.aoi-hover-modal:hover .swal2-actions {
+  opacity: 1;
+  pointer-events: auto;
+}

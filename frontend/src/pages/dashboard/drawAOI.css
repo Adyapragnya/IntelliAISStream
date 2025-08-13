@@ -1,0 +1,5 @@
+/* Ensure buttons are visible regardless of hover state */
+.swal2-popup .always-visible-btn {
+  visibility: visible !important;
+  opacity: 1 !important;
+}

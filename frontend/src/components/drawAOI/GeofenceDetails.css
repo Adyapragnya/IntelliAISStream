@@ -1,0 +1,45 @@
+/* In GeofenceDetails.css */
+.table-cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    word-break: break-word;
+  }
+
+  
+.history-card {
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+    width: calc(33.333% - 12px); /* Default: 3 per row */
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .history-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .history-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  /* Medium screens */
+  @media (max-width: 1200px) {
+    .history-card {
+      width: calc(50% - 12px); /* 2 per row */
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 768px) {
+    .history-card {
+      width: 100%; /* 1 per row */
+    }
+  }
+  
